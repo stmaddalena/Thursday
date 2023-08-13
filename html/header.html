@@ -1,18 +1,18 @@
 <style>
     header {
         height: 7vh;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
         background-color: #333;
     }
     
     .dropdown {
         display: flex;
         align-items: center;
-        justify-content: center;
-        border: none;
-        margin-right: 60px;
+        justify-content: end;
+        padding-right: 40px;
     }
     
     .btn-secondary {
@@ -20,11 +20,11 @@
         background: transparent;
         border: none;
     }
-    
+
     .btn-secondary:hover {
         color: #fff;
-        background-color: none;
-        border-color: none;
+        background-color: #2b7cd8;
+        border-color: #2b7cd8;
     }
     
     .btn-check:focus+.btn, .btn:focus {
@@ -48,23 +48,51 @@
         text-decoration: none;
         color: #333333ae;
     }
+
+    .logo {
+        padding-left: 50px;
+    }
+
+    .logo a {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px rgba(25, 136, 247, 0.2);
+        background-color: #2b7cd8;
+        padding: 2px 8px;
+        border-radius: 2px;
+    }
+    .logo a:hover {
+        color: #333;
+        background-color: #ffe100;
+        font-size: 25px;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px rgba(25, 136, 247, 0.2);
+    }
+
+    .dropdown-menu li:hover, .dropdown-menu li a:hover {
+        color: #ffe100;
+        padding-left: 8px;
+    } 
 </style>
 
 <header id="header">
+    <div class="logo">
+        <a href="home.html">BDMi</a>
+    </div>
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Genre</button>
         <ul class="dropdown-menu" style="padding-left: 20px; background-color: #333;"
             <li><a href= "#"></a></li>
-            <li><a href= "home.html">Home</a></li>
             <li><a href= "action.html">Action</a></li>
             <li><a href= "animation.html">Animation</a></li>
-            <li><a href= "#">Biography</a></li>
-            <li><a href= "#">Comedy</a></li>
-            <li><a href= "#">Drama</a></li>
-            <li><a href= "#">Fantasy</a></li>
-            <li><a href= "#">Horror</a></li>
-            <li><a href= "#">Romance</a></li>
-            <li><a href= "#">Sci-fi</a></li>
+            <li><a href= "biography.html">Biography</a></li>
+            <li><a href= "comedy.html">Comedy</a></li>
+            <li><a href= "drama.html">Drama</a></li>
+            <li><a href= "fantasy.html">Fantasy</a></li>
+            <li><a href= "horror.html">Horror</a></li>
+            <li><a href= "romance.html">Romance</a></li>
+            <li><a href= "sci-fi.html">Sci-fi</a></li>
         </ul>
       </div>
 </header>

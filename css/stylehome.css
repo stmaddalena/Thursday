@@ -143,6 +143,10 @@ p {
     color: #333333db;
 }
 
+.detail :hover {
+    transform: scale(1.5);
+}
+
 .content {
     /* border: 1px red solid; */
     height: 60%;
@@ -170,6 +174,11 @@ p {
     margin: 1.5rem 0rem 1rem 0rem;
     color: rgba(255, 255, 255);
     height: calc(14px + 2vmin);
+}
+
+.genre p:hover {
+    transform: scale(1.1);
+    background-color: #2b7cd8;
 }
 
 .genre p {
@@ -372,6 +381,11 @@ a {
     /* border: 1px red solid; */
     color: rgba(255, 255, 255);
     height: calc(16px + 2vmin);
+}
+
+.box-genre p:hover {
+    transform: scale(1.1);
+    background-color: #2b7cd8;
 }
 
 .box-genre p {
